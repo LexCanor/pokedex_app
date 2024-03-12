@@ -7,7 +7,7 @@ const ProtectedRoutes = () => {
     const trainerName = useSelector(store => store.trainerName)
 
     if(trainerName.length > 2){
-       return <div>
+        return <div>
         <PokeHeader />
         <Outlet/>
         </div>
