@@ -1,49 +1,46 @@
-.pokeCard {
-    border: 5px solid;
-    width: 250px;
+.idWrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 25px;
-    cursor: pointer;
-    gap: 5px;
-    transition: .25s;
-    position: relative;
+    justify-content: center;
 }
-.pokeCard:hover{
-    transform: scale(1.05);
-    transition: .25s;
+.id{
+    border: 1px solid lightgray;
+    padding: 0 8px;
+    border-radius: 4px;
 }
-.pokeCard div{
+.idCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px lightgray solid;
+    padding: 1rem;
+    border-radius: 15px;
+    width: 80vw;
+    max-width: 800px;
+    margin-bottom: 2rem;
+}
+.idCard img{
+    width: 250px;
     position: absolute;
+    top: 150px;
+    z-index: 2;
+}
+
+.typeBox{
     width: 100%;
-    height: 150px;
-    border-radius: 20px 20px 0 0 ;
+    height: 300px;
+    z-index: 1;
 }
-.pokeCard figure {
-    width: 150px;
-    position: relative;
+.typeBox.overlay{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 100px;
+    z-index: 0;
 }
-.pokeCard hr {
-    width: 85%;
-}
-
-.pokeContainer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 20px;
-}
-
-.pokeTypes {
-    display: flex;
-}
-
-.slot2::before{
-    content: ' / ';
-}
-
-.pokeStats{
+.pokeSize{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,1fr);
@@ -51,16 +48,24 @@
     width: 85%;
     gap: 10px;
 }
-
-.pokeStats li {
+.pokeSize li {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.stats{
+    width: 100%;
+    padding: 1rem 4rem;
+    margin-top: 50px;
+}
 
-/*valores dinamicos */ 
+
+
+
+
 
 .grass {
+    
     background: rgb(255,255,255);
 background: linear-gradient(0deg, rgba(255,255,255,0.44729344729344733) 0%, rgba(45,253,70,0.8660968660968661) 100%);
 }
@@ -148,4 +153,146 @@ background: linear-gradient(0deg, rgba(156,82,180,0.04843304843304841) 2%, rgba(
 .fairy{
     background: rgb(156,82,180);
 background: linear-gradient(0deg, rgba(156,82,180,0.04843304843304841) 2%, rgba(255,148,252,1) 68%, rgba(255,143,219,1) 100%);
+}
+
+.linea {
+    margin:0px 20px;
+    width: 90px;    
+    border-top:1px solid #999;
+    position: relative;
+    top:10px;
+    float:left;
+}
+
+
+.grass.title {
+    color: #426460;
+    background: none;
+    font-weight: bold;
+    float: left;
+}
+
+.fire.title {
+    color: #644242;
+    background: none;
+    font-weight: bold;
+    float: left;
+}
+
+.water.title {
+    color: #424764;
+    background: none;
+    font-weight: bold;
+    float: left;
+}
+
+.bug.title {
+    color: #526442;
+    background: none;
+    font-weight: bold;
+    float: left;
+}
+
+.flying.title {
+    color: #426460;
+    background: none;
+    font-weight: bold;
+    float: left;
+}
+
+.normal.title {
+    color: #645942;
+    background: none;
+    font-weight: bold;
+    float: left;
+}
+
+.poison.title {
+    color: #5f4264;
+    background: none;
+    font-weight: bold;
+    float: left;
+}
+
+.ground.title {
+    color: #645b42;
+    background: none;
+    font-weight: bold;
+    float: left;
+}
+
+.electric.title {
+    color: #696930;
+    background: none;
+    font-weight: bold;
+    float: left;
+}
+
+.rock.title {
+    color: #645542;
+    background: none;
+    font-weight: bold;
+    float: left;
+}
+
+.steel.title {
+    color: #444746;
+    background: none;
+    font-weight: bold;
+    float: left;
+}
+
+.ice.title {
+    color: #426460;
+    background: none;
+    font-weight: bold;
+    float: left;
+}
+
+.dragon.title {
+    color: #5a3c60;
+    background: none;
+    font-weight: bold;
+    float: left;
+}
+
+.ghost.title {
+    color: #644262;
+    background: none;
+    font-weight: bold;
+    float: left; 
+}
+
+.dark.title {
+    color: #232c2b;
+    background: none;
+    font-weight: bold;
+    float: left;
+}
+
+.fighting.title {
+    color: #603939;
+    background: none;
+    font-weight: bold;
+    float: left;    
+}
+
+.psychic.title {
+    color: #644263;
+    background: none;
+    font-weight: bold;
+    float: left;    
+}
+
+.fairy.title{
+    color: #9b5ea3;
+    background: none;
+    font-weight: bold;
+    float: left;    
+}
+
+@media (max-width: 450px) {
+    .linea {
+        display: none;
+    }
 }

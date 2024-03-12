@@ -3,8 +3,8 @@ import { createSlice } from "@reduxjs/toolkit";
 const pokemonNameSlice = createSlice({
     name: 'pokemonName',
     initialState: '',
-    reducers: {
-        setPokemonName: (currenValue, action) => action.payload
+    reducers:{  //actions
+        setPokemonName: (currentValue, action) => action.payload
     }
 });
 

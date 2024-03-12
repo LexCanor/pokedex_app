@@ -1,37 +1,37 @@
-import React, { useEffect, useRef } from 'react';
-import useFetch from '../../hooks/useFetch';
+import React, { useEffect, useRef } from 'react'
+import useFetch from '../../hooks/useFetch'
 import { setPokemonName } from '../../store/slices/pokemonName.slice';
 import { useDispatch } from 'react-redux';
+import './styles/selectType.css'
 
 const SelectType = ({setSelectValue}) => {
-
-    const [types, getTypes] = useFetch();
-    const dispatch = useDispatch();
+    const textSelect = useRef();
+    const url = 'https://pokeapi.co/api/v2/type'
+    const [ types, getTypes ] = useFetch();
+    const dispatch = useDispatch()
 
     useEffect(() => {
-        const url = 'https://pokeapi.co/api/v2/type';
-        getTypes(url);
+        getTypes(url)
     }, [])
-
-    const textSelect = useRef();
+    
+    //console.log(types)
 
     const handleChange = () => {
-        setSelectValue(textSelect.current.value);
-        dispatch(setPokemonName(''));
+        setSelectValue(textSelect.current.value)
+        dispatch(setPokemonName(''))
     }
 
-return (
-    <select onChange={handleChange} ref={textSelect}>
-        <option value="allPokemons">Todos los pokemones</option>
+  return (
+    <select onChange={handleChange} ref={textSelect} className='selector'>
+        <option value="allPokemons">allPokemons</option>
         {
             types?.results.map(type => (
-                <option key={type.url} value={type.url}>
-                    {type.name}
-                </option>
+                <option value={type.url}
+                key={type.url} >{type.name}</option>
             ))
         }
     </select>
-)
+  )
 }
 
-export default SelectType;
+export default SelectType

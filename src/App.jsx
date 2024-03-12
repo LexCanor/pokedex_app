@@ -1,13 +1,11 @@
-
-import { Route, Routes } from 'react-router-dom';
-import './App.css';
-import HomePage from './pages/HomePage';
-import PokedexPage from './pages/PokedexPage';
-import PokeIdPage from './pages/PokeIdPage';
-import ProtectedRoutes from './pages/ProtectedRoutes';
+import { Route, Routes } from 'react-router-dom'
+import './App.css'
+import PokedexPage from './pages/PokedexPage'
+import HomePage from './pages/HomePage'
+import PokeIdPage from './pages/PokeIdPage'
+import ProtectedRoutes from './pages/ProtectedRoutes'
 
 function App() {
-
 
   return (
       <Routes>
@@ -20,4 +18,4 @@ function App() {
   )
 }
 
-export default App;
+export default App

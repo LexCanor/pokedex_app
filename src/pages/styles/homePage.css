@@ -1,0 +1,48 @@
+.hpWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+.hpWrapper img {
+    width: 500px;
+}
+
+
+.hpTitle {
+    color: #FD1936;
+}
+
+.hpBar {
+    background-color: #DC1A1A;
+    width: 100vw;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    border-bottom: 2rem solid black ;
+    display: flex;
+    justify-content: center;
+}
+
+.hpDot {
+    height: 70px;
+    width: 70px;
+    bottom: -30px;
+    position: absolute;
+    background-color: white;
+    border: 8px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hpDot2 {
+    height: 35px;
+    width: 35px;
+    background-color: #212121;
+    border-radius: 50%;
+    border: 5px solid black;
+}

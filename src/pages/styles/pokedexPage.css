@@ -1,27 +1,28 @@
-.pokedex {
-    padding-bottom: 25px;
+.pokedex{
+    padding-bottom: 1rem;
+    
 }
 
-.poke_header {
+.pokeHeader {
     display: flex;
     flex-direction: column;
     margin: 30px;
     gap: 10px;
 }
-
-.poke_header h3 {
+.pokeHeader span {
+    color: red;
+}
+.pokeHeader h3{
     text-align: center;
 }
-
-.poke_header div {
+.pokeHeader div {
     display: flex;
+    gap: 10px;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-
-.poke_container {
+.pagContainer {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 20px;
+    justify-content: center;
 }

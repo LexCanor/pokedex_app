@@ -1,0 +1,130 @@
+.aWrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem
+}
+.aContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aBoxer{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.aBox{
+    border: 1px solid #cac9c9;
+    padding: 5px;
+    width: 120px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.bgrass {  
+    background-color: #85C9C5;
+    font-weight: bold;
+    color: white;
+}
+
+.bfire {
+    background-color: #ff6961;
+    font-weight: bold;
+    color: white;
+}
+
+.bwater {
+    background-color: #84b6f4;    
+    font-weight: bold;
+    color: white;
+}
+
+.bbug {
+    background-color: #92A212;
+    font-weight: bold;
+    color: white;
+}
+
+.bflying {
+    background-color: #81B9EF;
+    font-weight: bold;
+    color: white;
+}
+
+.bnormal {
+    background-color: #A0A2A0;
+    font-weight: bold;
+    color: white;
+}
+
+.bpoison {
+    background-color: #6C3D9A;
+    font-weight: bold;
+    color: white;
+}
+
+.bground {
+    background-color: #92501B;
+    font-weight: bold;
+    color: white;
+}
+
+.belectric {
+    background-color: #FAC100;
+    font-weight: bold;
+    color: white;
+}
+
+.brock {
+    background-color: #B0AB82;
+    font-weight: bold;
+    color: white;
+}
+
+.bsteel {
+    background-color: #60A1B8;
+    font-weight: bold;
+    color: white;
+}
+
+.bice {
+    background-color: #3FD8FF;
+    font-weight: bold;
+    color: white;
+}
+
+.bdragon {
+    background-color: #5061E1;    
+    font-weight: bold;
+    color: white;
+}
+
+.bghost {
+    background-color: #6F3F70;    
+    font-weight: bold;
+    color: white;
+}
+
+.bdark {
+    background-color: #4F3F3D;
+    font-weight: bold;
+    color: white;
+}
+
+.bfighting {
+    background-color: #D54D3C;    
+    font-weight: bold;
+    color: white;
+}
+
+.bpsychic {
+    background-color: #EF3F7A;
+    font-weight: bold;
+    color: white;
+}
+
+.bfairy{
+    background-color: #EF71F0;
+    font-weight: bold;
+    color: white;
+}
